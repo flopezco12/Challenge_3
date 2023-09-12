@@ -20,10 +20,6 @@ with open(election_data, newline ='') as csvfile:
             list_candidates.append(candidates)
     total_candidates = len(list_candidates)
 
-    Votes_A = len(df[(df[list_candidate[0]]=='Charles Casper Stockham')])
-    Votes_B = len(df[(df[list_candidate[1]]=='Diana DeGette')])
-    Votes_C = len(df[(df[list_candidate[1]]=='Raymon Anthony Doane')])
-
 with open('election_analysis.txt', 'w') as f:
     sys.stdout = f
     print("Election Results")
